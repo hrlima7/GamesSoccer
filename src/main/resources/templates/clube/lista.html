@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<section layout:fragment="corpo">
+
+
+<form th:action="@{/player/listaNome/nome}" th:object="${clube}" method="GET">
+
+<label for="nome">Buscar por nome</label>
+<input type="search" th:name="nome" id="nome"/>
+
+
+ <button >Buscar</button>
+
+</form>
+<br>
+
+
+
+<table>
+<thead>
+<tr>
+<th> NOME DO JOGADOR</th>
+<th>IDADE</th>
+<th>Escudo</th>
+</tr>
+</thead>
+<tr th:each="c : ${clube}">
+<td th:text="${c.nome}"> </td>
+<td th:text="${c.escudo}"> </td>
+
+
+</tr>
+
+
+
+</table>
+
+</section>
+
+</body>
+</html>

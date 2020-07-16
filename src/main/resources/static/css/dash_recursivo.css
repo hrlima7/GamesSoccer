@@ -1,0 +1,130 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html,body{
+height: 100%;
+}
+
+
+.dash{
+display: flex;
+flex-direction:row;
+height: 100%;
+width: 100%;
+
+}
+
+sidebar{
+margin-bottom: 50px;
+display:block;
+height: 100%;
+background-image: linear-gradient(to bottom right, #2E4272,#492E74);  
+width:300px
+}
+.sidebar-title{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 10px 30px;   
+ color:white;
+ 
+}
+sidebar .sidebar-title img{
+height: 40px;
+width: 70px;
+}
+.ico svg{
+  color:violet;
+margin: 40px;
+
+
+}
+ .menu{
+margin-bottom: 30px;
+
+ }   
+ .menu ul {
+list-style-type: none;
+
+}   
+.menu ul li{
+text-decoration-color: none;
+padding: 20px 20px;
+width: 100%;
+display:flex;
+flex-direction: row;
+align-items: center;
+
+
+}   
+.menu ul li a{
+  color:white;
+  margin-left:10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu ul li a:hover{
+color:#dbbfe0;
+
+
+}
+.menu ul li svg{
+color:violet;
+font-size: 25px;
+
+}
+
+
+.header{
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+height: 90px;
+background-image: linear-gradient(to bottom right, #2E4272,#492E74);
+padding:  30px;
+color:white;
+}
+
+.cabecalho a{
+text-decoration-color: none;
+
+}
+
+.cabecalho a:visited{
+color:white;
+
+}
+
+
+.content{
+    height: calc(100% - 90px);
+    width: 100%;
+    padding:30px;
+    background-color:#f6f5f7;
+   
+
+
+}
+.panel-row{
+display: flex;
+flex-direction:row;
+justify-content: center;
+align-content:flex-end;
+padding:20px;
+margin: 10px 0;
+}
+.panel{
+background-color:indigo;
+height: 200px;
+width:400px;
+margin: 40px;
+color:white;
+text-align: center;
+padding: 70px;
+font-size: 30px;
+}
+

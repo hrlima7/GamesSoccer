@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999xmlns/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout= "http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Spring-Boot Básico -HENRIQUE ROMA</title>
+	<meta charset="UTF-8" />
+	
+
+	<!-- CSS -->
+   	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Custom styles for this template -->
+	<link href="/css/style.css" rel="stylesheet" />
+	
+        </head>
+<body class="nav" >
+
+<div  class="container-fluid">
+
+<div  clas="main">
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">GSCC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/player/cadastrar}">Jogadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/clubes/cadastro}">Clubes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/tecnicos/cadastro}">Tecnicos</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+    
+    </span>
+  </div>
+</nav>
+		<aside>
+					<span>   </span>
+				</nav>
+		</aside>
+		  <div class="col-sm">
+			<section layout:fragment="corpo">
+			<div>CONTEUDO PRINCIPAL</div>
+			</section>
+		</div>
+		<div class="col-sm">
+		<h1>LADO B</h1>
+		</div>
+		
+	</div>	
+
+</div>
+
+		<footer>	
+<div><!--  	<footer th:replace="fragments/footer :: rodape">-->	</div>
+
+		<div></div>
+		</footer>
+</body>
+
+</html>
+	
+
+		<script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+

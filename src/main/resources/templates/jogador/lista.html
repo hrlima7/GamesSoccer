@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<section layout:fragment="corpo">
+
+
+<form th:action="@{/player/listaNome/nome}" th:object="${player}" method="GET">
+
+<label for="nome">Buscar por nome</label>
+<input type="search" th:name="nome" id="nome"/>
+
+
+ <button >Buscar</button>
+
+</form>
+<br>
+
+
+<div th:replace="@{fragments/alert}"></div>
+<table class="table table-striped">
+<thead>
+<tr>
+<th> Nome do Jogador</th>
+<th>Idade</th>
+<th>Salario</th>
+<th>Valor do Passe</th>
+<th>Data de cadastro</th>
+</tr>
+</thead>
+<tr th:each="p : ${player}">
+<td th:text="${p.nome}"> </td>
+<td th:text="${p.idade}"> </td>
+<td th:text="${p.salario}"> </td>
+<td th:text="${p.ValorDoPasse}"> </td>
+<td th:text="${p.dataDaContratacao}"> </td>
+		<td colspan="2">	<a class="btn btn-info btn-sm"
+								th:href="@{/player/editar/{id} (id=${p.id}) }"
+								role="button"> <span class="oi oi-brush" title="Editar"
+								aria-hidden="true"></span>
+							</a>
+					
+							<a th:href="@{/player/deletar/{id}(id=${p.id})}" class="btn btn-danger">Delete
+							</a>
+					
+							
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Excluir jogador
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>
+							
+			</td>
+				</tr>
+			</table>	
+	</section>
+
+</body>
+</html>

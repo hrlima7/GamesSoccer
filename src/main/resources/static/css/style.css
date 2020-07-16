@@ -1,0 +1,14 @@
+body{
+	background-color: #BAC0C9;
+	color: #E7ECEF;
+
+}	
+
+#img{
+	background-image: url("../../images/original-9f697f223dac0efa86ed91fd7f04c11e-940x470.jpg");
+	background-attachment: fixed;
+	background-size: cover
+	
+	
+	
+}

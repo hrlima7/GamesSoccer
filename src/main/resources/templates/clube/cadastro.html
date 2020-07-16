@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html layout:decorate ="~{layout}">
+<head>
+<title>CADASTROA</title>
+	<meta charset="UTF-8" />
+<body>
+
+
+
+<section class="" layout:fragment="corpo">
+
+<h1>Cadastro de clubes </h1>
+
+<div th:replace="@{fragments/alert}"></div>
+
+<form th:action="@{/clubes/salvar}" th:object="${clube}" method="POST">
+  <div class="form-group">
+	    <label for="nome">Cadastre o Clube</label>
+	    <input required type="text" class="form-control"th:field="*{nome}" id="nome" aria-describedby="emailHelp" placeholder="Insira o nome do Clube">
+  </div>  
+  <div class="form-group">
+	    <label for="escudo">Insira o escudo</label>
+	    <input type="file" th:field="*{escudo}" id="escudo" >
+  </div>
+  
+	<div class="form-group">  </div>
+                    
+  <input type="hidden" id="id" th:field="*{id}"/>
+  <button type="submit" class="btn btn-primary">cadastrar</button>
+</form>
+
+
+	
+ <a th:href="@{/clubes/listar}" class="btn btn-primary">Listar</a>
+	
+
+
+ </section>
+
+</body>
+</html>

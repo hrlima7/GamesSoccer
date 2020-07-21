@@ -1,16 +1,16 @@
 # GamesSoccer
 Sistema Esportivo de futebol
 
-Sistema simplesde cadastro de jogadores, clubes, tecnicos, em processo de desenvolvimento
+Sistema simplesde cadastro de jogadores, clubes, tecnicos, a incluir partidas e campeonatos.
 
 
-SPRING FRAMEWORK
-SPRING BOOT
-MAVEN
-MYSQL
+* SPRING FRAMEWORK - MVC
+* SPRING BOOT
+* MAVEN
+* MYSQL
+* WEB
+* BOOTSTRAP
+* THYMEFEAFY
 
-WEB
-BOOTSTRAP
-THYMEFEAFY
-
+Arquitetura em MVC, Model Controller,service e repositories 
 
